@@ -1,11 +1,14 @@
-    export function ProductsIndex({ products }) {
+    export function ProductsIndex(props) {
       return (
         <div>
           <h1>All products</h1>
-         {products.map((product) => (
+         {props.products.map((product) => (
            <div key={product.id}>
-             <h2>{product.name}</h2>
-             <img src={product.url} />
+            <p>{product.name}</p>
+            <p>{product.price}</p>
+            <p>{product.description}</p>
+            {/* <img src={product.images[0] && product.images[0].url} /> */}
+            {/* <p>{product.images[0] && product.images[0].url}</p> */}
            </div>
          ))}
         </div>
