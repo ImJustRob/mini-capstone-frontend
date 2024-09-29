@@ -8,7 +8,8 @@ export function Header() {
         <a href="/">Home</a> | <a href="/login">Login</a> |
         <Link to="/signup">Signup</Link> |
         <Link to="/login">Login</Link> |
-        <Link to="/products/new">New Product</Link>
+        <Link to="/products/new">New Product</Link> |
+        <Link to="/products"> Products Index</Link>
         </nav>
       </header>
     )

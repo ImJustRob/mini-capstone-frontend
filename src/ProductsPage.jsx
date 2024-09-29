@@ -28,7 +28,7 @@
     return (
       <main>
         {/* <ProductsNew onCreate={handleCreate} /> */}
-        <ProductsIndex products={products} />
+        {/* <ProductsIndex products={products} /> */}
       </main>
     );
   }
