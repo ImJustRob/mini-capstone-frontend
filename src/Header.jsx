@@ -9,7 +9,8 @@ export function Header() {
         <Link to="/signup">Signup</Link> |
         <Link to="/login">Login</Link> |
         <Link to="/products/new">New Product</Link> |
-        <Link to="/products"> Products Index</Link>
+        <Link to="/products"> Products</Link> |
+        <Link to="/cart"> Cart</Link>
         </nav>
       </header>
     )
