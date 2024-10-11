@@ -8,9 +8,8 @@ export function ProductsNewPage({ onCreate }) {
     event.preventDefault()
     console.log('handling submit')
     const params = new FormData(event.target)
-    axios.post("http://localhost:3000/recipes.json", params).then(response => {
+    axios.post("http://localhost:3000/products.json", params).then(response => {
       console.log(response.data)
-      // window.location.href = "/"
       navigate('/');
       
     })
