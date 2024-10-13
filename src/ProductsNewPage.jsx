@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
-export function ProductsNewPage({ onCreate }) {
+export function ProductsNewPage() {
   const navigate = useNavigate();
   
   const handleSubmit = (event) => {
@@ -32,7 +32,7 @@ export function ProductsNewPage({ onCreate }) {
          price: <input name="price" type="text" />
        </div>
        <div>
-         Supplier id: <input name="supplier id" type="text" />
+         Supplier id: <input name="supplier_id" type="text" />
        </div>
        <button type="submit">Create Product</button>
      </form>

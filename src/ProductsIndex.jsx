@@ -11,6 +11,7 @@ import { useState } from "react";
             <p>{product.name}</p>
             <p>{product.price}</p>
             <p>{product.description}</p>
+            <p>{product.supplier && product.supplier.name}</p>
             <button onClick={() => props.onShow(product)}>Edit this product</button>          
             <button onClick={() => props.onShowAddToCart(product)}>Add to cart</button>  
            </div>

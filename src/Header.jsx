@@ -19,6 +19,7 @@ export function Header() {
     return (
       <header>
         <nav>
+        <Link to="/">Home</Link> | 
         <Link to="/products/new">New Product</Link> | 
         <Link to="/products"> Products</Link> | 
         <Link to="/cart"> Cart</Link>

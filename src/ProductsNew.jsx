@@ -23,7 +23,7 @@
             price: <input name="price" type="text" />
           </div>
           <div>
-            Supplier id: <input name="supplier id" type="text" />
+            Supplier id: <input name="supplier_id" type="text" />
           </div>
           <button type="submit">Create Product</button>
         </form>
