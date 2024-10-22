@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 export const Contact = () => {
@@ -14,6 +14,8 @@ export const Contact = () => {
       .then(
         () => {
           console.log('SUCCESS!');
+          e.target.reset();
+          alert("Email has been successfully sent!")
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -27,14 +29,14 @@ export const Contact = () => {
             <h1>Contact Me</h1>
         </div>
     <div>
-      <input type="text" name="user_name" placeholder="Full Name" />
-      <input type="text" name="email" placeholder="Email" />
+      <input type="text" name="user_name" placeholder="Full Name" required/>
+      <input type="text" name="email" placeholder="Email" required/>
     </div>
     <div>
-      <input type="text" name="phone_number" placeholder="Phone Number" />
-      <input type="text" name="subject" placeholder="subject" />
+      <input type="text" name="phone_number" placeholder="Phone Number" required/>
+      <input type="text" name="subject" placeholder="subject" required/>
     </div>
-    <textarea name="message" placeholder="Your Message" />
+    <textarea name="message" placeholder="Your Message" required/>
     <input type="submit" value="send" />
   </form>
   );
