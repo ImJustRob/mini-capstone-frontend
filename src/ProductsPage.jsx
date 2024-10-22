@@ -71,7 +71,7 @@ export function ProductsPage() {
   return (
     <main>
       <h1>Welcome to React!</h1>
-      <ProductsNew onCreate={handleCreateProduct}/>
+      {/* <ProductsNew onCreate={handleCreateProduct}/> */}
       <ProductsIndex products={products} onShow={handleShow} onShowAddToCart={handleShowAddToCart} />
       <Modal show={isProductsShowVisible} onClose={handleClose}>
         <ProductsEdit product={currentProduct} onUpdateProduct={handleUpdateProduct} />
