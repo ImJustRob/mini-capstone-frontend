@@ -34,7 +34,7 @@ export function ProductsNewPage() {
        <div>
          Supplier id: <input name="supplier_id" type="text" />
        </div>
-       <button type="submit">Create Product</button>
+       <button className='bg-gray-400 hover:bg-gray-500 py-1 px-1 rounded-lg' type="submit">Create Product</button>
      </form>
    </div>
  );

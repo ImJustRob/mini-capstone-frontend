@@ -6,9 +6,9 @@ export function Header() {
   let authenticationLinks;
   if (localStorage.jwt === undefined) {   
     authenticationLinks = (
-      <div>
-        <a href="/login">Login</a> | 
-        <a href="/signup">Signup</a>
+      <div className="bg-blue-500 py-2 text-center ">
+        <a className="hover:bg-gray-400 py-2 px-2 rounded-lg" href="/login">Login</a> | 
+        <a className="hover:bg-gray-400 py-2 px-2 rounded-lg"  href="/signup">Signup</a>
       </div>
     )
   }  else {  
@@ -18,12 +18,12 @@ export function Header() {
   }
     return (
       <header>
-        <nav>
-        <Link to="/">Home</Link> | 
-        <Link to="/products/new">New Product</Link> | 
-        <Link to="/products"> Products</Link> | 
-        <Link to="/cart"> Cart</Link> | 
-        <Link to="/contact"> Contact </Link>
+        <nav className="bg-blue-500 py-2 text-center">
+        <Link className="hover:bg-gray-400 py-2 px-2 rounded-lg"  to="/">Home</Link> | 
+        <Link className="hover:bg-gray-400 py-2 px-2 rounded-lg"  to="/products/new">New Product</Link> | 
+        <Link className="hover:bg-gray-400 py-2 px-2 rounded-lg"  to="/products"> Products</Link> | 
+        <Link className="hover:bg-gray-400 py-2 px-2 rounded-lg"  to="/cart"> Cart</Link> | 
+        <Link className="hover:bg-gray-400 py-2 px-2 rounded-lg"  to="/contact"> Contact </Link>
         </nav>
         {authenticationLinks}
       </header>
